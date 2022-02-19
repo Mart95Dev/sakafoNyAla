@@ -1,7 +1,7 @@
+@import url("events.css");
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap"); /* Font header */
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme&family=Cabin:wght@600&display=swap"); /* font titles */
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme&family=Cabin:wght@600&family=Karma&display=swap"); /* font paragraph */
-
 
 :root {
   --font-header: "BioRhyme", serif;
@@ -9,4 +9,202 @@
   --font-paragraph: "Karma", serif;
   --color-1: #d6955b; /* color background footer */
   --color-2: #226d68; /* color background header */
-  --color-3: #ecf8f6; /* color title */
+  --color-3: #ecf8f6; /* color header */
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-paragraph);
+  font-size: 1.2rem;
+}
+
+header {
+  font-family: var(--font-header);
+  color: var(--color-3);
+}
+
+/* taille mobile first de base 375px */
+
+header .nav {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  position: fixed;
+}
+
+header .nav .container-item-image {
+  display: none;
+}
+
+header .nav .container-item-nav {
+  background-color: var(--color-1);
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header .nav .container-item-image .item-image {
+  display: none;
+}
+
+header .nav .container-item-nav .item-nav {
+  display: flex;
+  margin: 0 5px;
+  text-decoration: none;
+  color: var(--color-3);
+}
+
+header nav .container-item-nav li a:hover {
+  padding: 0;
+  color: var(--color-2);
+  border-bottom: 1px solid var(--color-3);
+  margin-bottom: 5px;
+  transition: 5ms;
+}
+
+header .container-heading {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../image/agriculture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+header .container-heading h1 {
+  padding-top: 165px;
+  text-align: center;
+  font-size: 1.6rem;
+  -webkit-text-stroke: 0.1px;
+  -webkit-text-stroke-color: var(--color-2);
+}
+
+header .container-heading .text-heading {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.15rem;
+  color: var(--color-3);
+  background-color: var(--color-2);
+}
+
+main {
+  z-index: 99;
+  font-size: 1.1rem;
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+}
+
+main section h2 {
+  position: relative;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+main section .subtitle-permaculture::after {
+  content: "";
+  background-color: var(--color-1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 97%;
+  height: 1px;
+  transform: translateX();
+}
+
+main section p {
+  margin: 20px 0;
+}
+
+main section .subtitle-action::after {
+  content: "";
+  background-color: var(--color-1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 43%;
+  height: 1px;
+  transform: translateX();
+}
+main section .subtitle-lieu::after {
+  content: "";
+  background-color: var(--color-1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: 1px;
+  transform: translateX();
+}
+
+main section img {
+  display: block;
+  margin-bottom: 10px;
+  margin: auto;
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+}
+
+main section div {
+  background-color: var(--color-2);
+  /* border-radius: 10px; */
+  padding: 2px;
+  margin: 25px 1px;
+  color: var(--color-3);
+  opacity: 0.6;
+}
+
+main section div h3 {
+  padding: 2px;
+  color: var(--color-1);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1em;
+  margin: 0;
+}
+
+main section div h3 p {
+  margin: 0 5px;
+}
+
+main section ol {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+main section ol li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+main section ol li .icon-arbre {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+main section ol li button {
+  background-color: var(--color-2);
+  color: var(--color-3);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
