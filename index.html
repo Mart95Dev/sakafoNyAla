@@ -11,13 +11,14 @@
 <body>
   <header>
         <!-- Menu et bandeau de la page du site -->
-    <nav class="nav">      
+    <nav class="nav" >      
         <ul class="container-item-image">
           <li ><img class="item-image" src="./image/bandeau_sakafo.jpg" alt="Association Sakafo Ny Ala, en zone tropicale"></li>          
         </ul>
-        <ul class="container-item-nav">
+        <ul class="container-item-nav"  id="nav-b">
           <li ><a class="item-nav space-item-nav" href="./index.html">Accueil</a></li>
           <li><a  class="item-nav space-item-nav" href="./events.html">Evènements</a></li>
+          <li><a  class="item-nav space-item-nav" href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div class="container-heading">     
@@ -62,7 +63,7 @@
           <h2 class="subtitle-lieu">Secteur Géographique</h2>
           <p>  Nous avons
             choisi Madagascar et plus exactement le sud du pays. Le climat est
-            rude, il y a une desertification qui s'y installe, une déforestation
+            rude, il y a une desertification qui s'y installe et une déforestation
             importante. </p> 
             <img src="./image/region-sud-madagascar.jpg" alt="région du sud de madagascar">
           <p>Notre association Sakafo Ny Ala, qui siginifie la nature qui donne de la
@@ -74,30 +75,55 @@
           <p>Cependant en zone aride et tropicale, les techniques permaculturales doivent être adaptée. Nous avons décidé de
             créer deux zones d'expérimentation : 
             <ol>
-              <li> <img class ="icon-arbre" src="./image/arbre.png" alt="icone d'une pousse d'arbre">un petit terrain en zone Urbaine sur la ville de Toliara</li>
-              <li><button>Terrain en zone Urbaine</button></li>
-              <li><img class ="icon-arbre" src="./image/arbre.png" alt="icone d'une pousse d'arbre">Un terrain de 5 hectares sur la ville
-                de Ambolimaka, proche de la mer.</li>
-              <li><button>Terrain Ambolimaka</button></li>
+              <li> 
+                <div class="terrains">
+                  <img class ="icon-arbre" src="./image/arbre.png" alt="icone d'une pousse d'arbre">
+                  <p>Ville de Toliara</p>
+                  <button>Zone urbaine</button>
+                </div>
+              </li>
+              
+              <li>
+                <div class="terrains">
+                  <img class ="icon-arbre" src="./image/arbre.png" alt="icone d'une pousse d'arbre">
+                  <p>Ville Ambolimailaky</p>
+                  <button>Zone extra-urbaine</button>
+                </div>
+              </li>
             </ol>            
           </p>
         </section>    
       </main>  
       <!-- pied de page du site -->
       <footer>
-        <div>
-          <p>Donation</p>
+        <h4 id="contact">Rejoignez-nous dans cette aventure :</h4>
+       <form>
+         <div class="name">
+          <label for="surname">Prénom :</label>
+          <input type="text" >
+         </div>
+        <div class="surname">
+          <label for="name">Nom :</label>
+          <input type="text" >
         </div>
-        <div>
-          <p>Contact</p>
+        <div class="email">
+          <label for="email">Email :</label>
+          <input type="email" >
         </div>
-        <div>
-          <p>Lieux de culture :</p>
+        <div class="message">
+          <label for="meassage">Message :</label>
+          <textarea rows = "5" name = "message">
+           
+         </textarea>
         </div>
-        <div>
-          <p>Copyright@2022 -  Association Sakafo Ny Ala</p>
+        <div class="button-form">
+         <button class="button-form-footer" >Envoyer</button>
         </div>
-      </footer>     
+       
+       </form>           
+        <p class="copyright">Copyright@2022 -  Association Sakafo Ny Ala</p>
+      </footer> 
+       
     
 </body>
 </html>

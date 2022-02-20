@@ -21,6 +21,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-paragraph);
   font-size: 1.2rem;
@@ -58,19 +62,25 @@ header .nav .container-item-image .item-image {
   display: none;
 }
 
-header .nav .container-item-nav .item-nav {
-  display: flex;
+header .nav .container-item-nav li .item-nav {
+  padding: 1px;
   margin: 0 5px;
+  border: 1px solid var(--color-1);
   text-decoration: none;
+  display: flex;
   color: var(--color-3);
 }
 
-header nav .container-item-nav li a:hover {
-  padding: 0;
-  color: var(--color-2);
-  border-bottom: 1px solid var(--color-3);
-  margin-bottom: 5px;
-  transition: 5ms;
+header nav .container-item-nav li .item-nav:hover {
+  padding: 1px;
+  border-top: 1.5px solid var(--color-2);
+  border-bottom: 1.5px solid var(--color-2);
+}
+
+header nav .container-item-nav li .item-nav:focus {
+  padding: 1px;
+  border-top: 1.5px solid var(--color-2);
+  border-bottom: 1.5px solid var(--color-2);
 }
 
 header .container-heading {
@@ -101,7 +111,6 @@ header .container-heading .text-heading {
 }
 
 main {
-  z-index: 99;
   font-size: 1.1rem;
   text-align: justify;
   width: 90%;
@@ -122,7 +131,6 @@ main section .subtitle-permaculture::after {
   left: 0;
   width: 97%;
   height: 1px;
-  transform: translateX();
 }
 
 main section p {
@@ -137,8 +145,8 @@ main section .subtitle-action::after {
   left: 0;
   width: 43%;
   height: 1px;
-  transform: translateX();
 }
+
 main section .subtitle-lieu::after {
   content: "";
   background-color: var(--color-1);
@@ -147,7 +155,6 @@ main section .subtitle-lieu::after {
   left: 0;
   width: 75%;
   height: 1px;
-  transform: translateX();
 }
 
 main section img {
@@ -157,15 +164,6 @@ main section img {
   border-radius: 10px;
   width: 300px;
   height: auto;
-}
-
-main section div {
-  background-color: var(--color-2);
-  /* border-radius: 10px; */
-  padding: 2px;
-  margin: 25px 1px;
-  color: var(--color-3);
-  opacity: 0.6;
 }
 
 main section div h3 {
@@ -189,7 +187,7 @@ main section ol {
 
 main section ol li {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -200,11 +198,139 @@ main section ol li .icon-arbre {
   height: 25px;
 }
 
+main section ol li .terrains {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+main section ol li p {
+  margin-left: 10px;
+  width: 160px;
+}
+
 main section ol li button {
+  height: 30px;
   background-color: var(--color-2);
   color: var(--color-3);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid var(--color-2);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+main section ol li button:hover {
   padding: 10px;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  border: 1px solid var(--color-2);
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-2);
+  color: var(--color-3);
+}
+
+footer h4 {
+  padding: 5px;
+  margin-bottom: 5px;
+  color: var(--color-3);
+  font-size: 0.95rem;
+  font-weight: 200;
+  margin: auto;
+}
+
+footer h4 #contact {
+  transition: 0.5s ease-out;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+footer form input,
+footer form textarea {
+  margin: 5px;
+  width: 125px;
+  font-size: 0.9rem;
+  outline: none;
+  border-radius: 5px;
+}
+
+footer form input[type="email"],
+footer form textarea {
+  width: 175px;
+}
+
+footer form label {
+  margin-left: 10px;
+  display: block;
+  width: 100px;
+  float: left;
+}
+
+footer form input {
+  height: 20px;
+  margin-bottom: 8px;
+  padding: 2px;
+}
+
+footer form .button-form {
+  display: block;
+  margin: auto;
+}
+
+footer form div .button-form-footer {
+  background-color: var(--color-1);
+  color: var(--color-3);
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid var(--color-3);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+footer form div .button-form-footer:hover {
+  background-color: var(--color-2);
+  color: var(--color-3);
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid var(--color-1);
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+footer .copyright {
+  width: 100%;
+  background-color: var(--color-1);
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+
+footer .copyright p {
+  line-height: 50px;
+}
+
+footer .goback {
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 330px;
+}
+
+footer div img {
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
