@@ -35,7 +35,7 @@ header {
   color: var(--color-3);
 }
 
-/* taille mobile first de base 375px */
+/* taille mobile first de base <= 480px*/
 
 header .nav {
   display: flex;
@@ -95,15 +95,15 @@ header .container-heading {
 }
 
 header .container-heading h1 {
-  padding-top: 165px;
+  padding-top: 175px;
   text-align: center;
-  font-size: 1.6rem;
-  -webkit-text-stroke: 0.1px;
+  font-size: 1.8rem;
+  -webkit-text-stroke: 0.09px;
   -webkit-text-stroke-color: var(--color-2);
 }
 
 header .container-heading .text-heading {
-  margin-top: 30px;
+  margin-top: 75px;
   text-align: center;
   font-size: 1.15rem;
   color: var(--color-3);
@@ -123,38 +123,18 @@ main section h2 {
   margin-bottom: 20px;
 }
 
-main section .subtitle-permaculture::after {
+main section .subtitle::after {
   content: "";
   background-color: var(--color-1);
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 97%;
+  width: 100%;
   height: 1px;
 }
 
 main section p {
   margin: 20px 0;
-}
-
-main section .subtitle-action::after {
-  content: "";
-  background-color: var(--color-1);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 43%;
-  height: 1px;
-}
-
-main section .subtitle-lieu::after {
-  content: "";
-  background-color: var(--color-1);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 75%;
-  height: 1px;
 }
 
 main section img {
@@ -182,7 +162,7 @@ main section div h3 p {
 main section ol {
   display: flex;
   flex-wrap: wrap;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 main section ol li {
@@ -193,7 +173,7 @@ main section ol li {
 }
 
 main section ol li .icon-arbre {
-  margin-right: 10px;
+  margin-right: 7px;
   width: 25px;
   height: 25px;
 }
@@ -206,7 +186,7 @@ main section ol li .terrains {
 }
 
 main section ol li p {
-  margin-left: 10px;
+  margin-left: 5px;
   width: 160px;
 }
 
@@ -214,7 +194,6 @@ main section ol li button {
   height: 30px;
   background-color: var(--color-2);
   color: var(--color-3);
-  border: none;
   border-radius: 5px;
   padding: 5px;
   border: 1px solid var(--color-2);
@@ -334,3 +313,11 @@ footer div img {
   height: 40px;
   cursor: pointer;
 }
+
+/* taille mobile first de base <=768 px*/
+
+/* taille mobile first de base <=1024 px*/
+
+/* taille mobile first de base <=1600 px*/
+
+/* taille mobile first de base > 1600 px*/
