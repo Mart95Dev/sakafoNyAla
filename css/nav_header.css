@@ -1,0 +1,72 @@
+header .nav {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  position: fixed;
+}
+
+header .nav .container-item-image {
+  display: none;
+}
+
+header .nav .container-item-nav {
+  background-color: var(--color-1);
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header .nav .container-item-image .item-image {
+  display: none;
+}
+
+header .nav .container-item-nav li .item-nav {
+  padding: 1px;
+  margin: 0 5px;
+  border: 1px solid var(--color-1);
+  text-decoration: none;
+  display: flex;
+  color: var(--color-3);
+}
+
+header nav .container-item-nav li .item-nav:hover {
+  padding: 1px;
+  border-top: 1.5px solid var(--color-2);
+  border-bottom: 1.5px solid var(--color-2);
+}
+
+header nav .container-item-nav li .item-nav:focus {
+  padding: 1px;
+  border-top: 1.5px solid var(--color-2);
+  border-bottom: 1.5px solid var(--color-2);
+}
+
+header .container-heading {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../image/agriculture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+header .container-heading h1 {
+  padding-top: 175px;
+  text-align: center;
+  font-size: 1.8rem;
+  -webkit-text-stroke: 0.09px;
+  -webkit-text-stroke-color: var(--color-2);
+}
+
+header .container-heading .text-heading {
+  margin-top: 75px;
+  text-align: center;
+  font-size: 1.15rem;
+  color: var(--color-3);
+  background-color: var(--color-2);
+}

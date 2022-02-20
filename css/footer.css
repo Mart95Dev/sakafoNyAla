@@ -1,0 +1,105 @@
+footer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-2);
+  color: var(--color-3);
+}
+
+footer h4 {
+  padding: 5px;
+  margin-bottom: 5px;
+  color: var(--color-3);
+  font-size: 0.95rem;
+  font-weight: 200;
+  margin: auto;
+}
+
+footer h4 #contact {
+  transition: 0.5s ease-out;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+footer form input,
+footer form textarea {
+  margin: 5px;
+  width: 125px;
+  font-size: 0.9rem;
+  outline: none;
+  border-radius: 5px;
+}
+
+footer form input[type="email"],
+footer form textarea {
+  width: 175px;
+}
+
+footer form label {
+  margin-left: 10px;
+  display: block;
+  width: 100px;
+  float: left;
+}
+
+footer form input {
+  height: 20px;
+  margin-bottom: 8px;
+  padding: 2px;
+}
+
+footer form .button-form {
+  display: block;
+  margin: auto;
+}
+
+footer form div .button-form-footer {
+  background-color: var(--color-1);
+  color: var(--color-3);
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid var(--color-3);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+footer form div .button-form-footer:hover {
+  background-color: var(--color-2);
+  color: var(--color-3);
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid var(--color-1);
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+footer .copyright {
+  width: 100%;
+  background-color: var(--color-1);
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+
+footer .copyright p {
+  line-height: 50px;
+}
+
+footer .goback {
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 330px;
+}
+
+footer div img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
