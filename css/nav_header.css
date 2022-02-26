@@ -2,7 +2,7 @@ header .nav {
   z-index: 99;
   display: flex;
   justify-content: center;
-  height: 40px;
+  height: 45px;
   width: 100%;
   position: fixed;
 }
@@ -18,7 +18,7 @@ header .nav .container-item-nav {
 
 header .nav .container-item-nav li .item-image {
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 15px;
   width: calc(27px + 1.5vw);
   height: calc(27px + 1.5vw);
 }
@@ -60,7 +60,7 @@ header .container-heading {
 
 header .container-heading h1 {
   letter-spacing: 10px;
-  padding-top: 185px;
+  padding-top: 250px;
   text-transform: uppercase;
   text-align: center;
   font-size: calc(24px + 2vw);
@@ -69,14 +69,16 @@ header .container-heading h1 {
 }
 
 header .container-heading h1 .first-letter {
-  font-size: calc(60px + 3vw);
-  color: #ffc800;
+  font-size: calc(50px + 3vw);
+  color: var(--color-4);
 }
 
 header .container-heading .text-heading {
   margin-top: 75px;
+  line-height: 40px;
   text-align: center;
   font-size: calc(0.8rem + 1vw);
+  font-weight: 100;
   color: var(--color-3);
   background-color: var(--color-2);
 }

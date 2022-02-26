@@ -8,6 +8,7 @@ main {
 }
 
 main section h2 {
+  font-size: calc(1.08rem + 1vw);
   position: relative;
   text-align: start;
   margin-bottom: 20px;
@@ -27,64 +28,64 @@ main section p {
   margin: 20px 0;
 }
 
-main section img {
+main section .img-section {
   display: block;
   margin-bottom: 10px;
   margin: auto;
   border-radius: 10px;
-  width: 300px;
+  min-width: 200px;
+  width: calc(250px + 15vw);
   height: auto;
 }
 
-main section ol {
+main section ul {
+  margin: 15px 2px 40px 2px;
+}
+
+main section ul .zone {
+  margin: 10px 15px 10px 15px;
+  text-align: left;
+  margin-left: 25px;
+}
+
+main section ul .zone-toliara,
+main section ul .zone-ambolimalaiky {
   display: flex;
   flex-wrap: wrap;
-  font-size: calc(1rem + 0.3vw);
+  margin: 10px 50px 10px 50px;
 }
 
-main section ol li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+main section ul .zone-toliara img,
+main section ul .zone-ambolimalaiky img {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  min-width: 150px;
+  width: calc(100px + 15vw);
+  height: auto;
   margin-bottom: 10px;
-}
-
-main section ol li .icon-arbre {
-  margin-right: 7px;
-  width: calc(25px + 0.5vw);
-  height: calc(25px + 0.5vw);
-}
-
-main section ol li .terrains {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-}
-
-main section ol li p {
-  margin-left: 5px;
-  width: 160px;
-}
-
-main section ol li button {
-  font-size: calc(1rem + 0.3vw);
-  font-weight: 100;
-  height: 30px;
-  padding: 5px 10px;
-  background-color: var(--color-2);
-  color: var(--color-3);
-  border-radius: 5px;
+  padding: 0;
   border: 1px solid var(--color-2);
-  cursor: pointer;
+  box-shadow: 7px 10px 5px -3px rgba(16, 77, 37, 0.66);
+  -webkit-box-shadow: 7px 10px 5px -3px rgba(16, 77, 37, 0.66);
+  -moz-box-shadow: 7px 10px 5px -3px rgba(16, 77, 37, 0.66);
+  filter: brightness(89%);
+  -webkit-filter: brightness(30%);
+  -moz-filter: brightness(89%);
+  cursor: zoom-in;
   transition: 0.3s ease-in-out;
 }
 
-main section ol li button:hover {
-  padding: 10px;
-  background-color: var(--color-1);
-  color: var(--color-2);
-  border: 1px solid var(--color-2);
+main section ul .zone-toliara img:hover,
+main section ul .zone-ambolimalaiky img:hover {
+  z-index: 10;
+  transform: scaleX(1.1) scaleY(1.1);
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
 
 /* ------------------------------------------------------ */
@@ -97,7 +98,7 @@ main section ol li button:hover {
 }
 
 @media (min-width: 768px) {
-  main section img {
+  main section .img-section {
     width: 40vw;
   }
 }

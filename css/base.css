@@ -3,12 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme&family=Cabin:wght@600&family=Karma&display=swap"); /* font paragraph */
 
 :root {
-  --font-header: "BioRhyme", serif;
-  --font-title: "Cabin", sans-serif;
+  --font-title: "BioRhyme", serif;
+  --font-header: "Cabin", sans-serif;
   --font-paragraph: "Karma", serif;
-  --color-1: #6d4322; /* color background footer */
-  --color-2: #226d43; /* color background header */
-  --color-3: #ecf8f6; /* color header */
+  --color-1: #6d4322; /* color background footer et header */
+  --color-2: #226d43; /* color background header  et header*/
+  --color-3: #ecf8f6; /* color */
+  --color-4: #ffc800; /* color */
 }
 
 *,
@@ -22,12 +23,10 @@
 
 html {
   font-size: 16px;
-  --res: calc(0.01 * 10vmin);
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-paragraph);
   font-size: 1.2rem;
 }
 
@@ -35,4 +34,16 @@ header {
   width: 100vw;
   font-family: var(--font-header);
   color: var(--color-3);
+}
+
+main {
+  font-family: var(--font-paragraph);
+}
+
+footer {
+  font-family: var(--font-header);
+}
+
+.subtitle {
+  font-family: var(--font-title);
 }
