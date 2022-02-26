@@ -6,8 +6,8 @@
   --font-header: "BioRhyme", serif;
   --font-title: "Cabin", sans-serif;
   --font-paragraph: "Karma", serif;
-  --color-1: #d6955b; /* color background footer */
-  --color-2: #226d68; /* color background header */
+  --color-1: #6d4322; /* color background footer */
+  --color-2: #226d43; /* color background header */
   --color-3: #ecf8f6; /* color header */
 }
 
@@ -21,6 +21,8 @@
 }
 
 html {
+  font-size: 16px;
+  --res: calc(0.01 * 10vmin);
   scroll-behavior: smooth;
 }
 
@@ -30,6 +32,7 @@ body {
 }
 
 header {
+  width: 100vw;
   font-family: var(--font-header);
   color: var(--color-3);
 }

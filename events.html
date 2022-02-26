@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Association Sakafo Ny Ala : la permaculture en zone tropicale</title>
     <link rel="shortcut icon" href="image/coccinelle.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/events.css" />
+    <link rel="stylesheet" href="css/events.css" />
   </head>
   <body>
     <header>
       <!-- Menu et bandeau de la page du site -->
       <nav class="nav">
-        <ul class="container-item-image">
+        <ul class="container-item-nav">
           <li>
             <img
               class="item-image"
-              src="./image/bandeau_sakafo.jpg"
+              src="./image/arbre.png"
               alt="Association Sakafo Ny Ala, en zone tropicale"
             />
           </li>
-        </ul>
-        <ul class="container-item-nav">
           <li>
             <a class="item-nav space-item-nav" href="./index.html">Accueil</a>
           </li>
@@ -36,40 +34,58 @@
         </ul>
       </nav>
       <div class="container-heading">
-        <h1>Travaillez autrement !</h1>
-        <p class="text-heading">Suivez-nous et vous comprendrez !</p>
+        <h1>La permaculture en zone Tropicale</h1>
+        <p class="text-heading">
+          Ce sont les gouttes d'eau qui forment les rivières !
+        </p>
       </div>
     </header>
     <main>
-      <!-- page web visuelle -->
-      <section></section>
       <section></section>
     </main>
     <!-- pied de page du site -->
     <footer>
-      <h4 id="contact">Rejoignez-nous dans cette aventure :</h4>
-      <form>
-        <div class="name">
-          <label for="surname">Prénom :</label>
-          <input type="text" />
-        </div>
-        <div class="surname">
-          <label for="name">Nom :</label>
-          <input type="text" />
-        </div>
-        <div class="email">
-          <label for="email">Email :</label>
-          <input type="email" />
-        </div>
-        <div class="message">
-          <label for="meassage">Message :</label>
-          <textarea rows="5" name="message"> </textarea>
-        </div>
-        <div class="button-form">
-          <button class="button-form-footer">Envoyer</button>
-        </div>
-      </form>
-      <p class="copyright">Copyright@2022 - Association Sakafo Ny Ala</p>
+      <div class="container">
+        <h3>Rejoignez-nous dans cette aventure !</h3>
+        <form>
+          <label for="fname">Nom & prénom</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Votre nom et prénom"
+          />
+
+          <label for="sujet">Sujet</label>
+          <input
+            type="text"
+            id="sujet"
+            name="sujet"
+            placeholder="L'objet de votre message"
+          />
+
+          <label for="emailAddress">Email</label>
+          <input
+            id="emailAddress"
+            type="email"
+            name="email"
+            placeholder="Votre email"
+          />
+
+          <label for="subject">Message</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Votre message"
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Envoyer" />
+        </form>
+      </div>
+      <div class="container-copyright">
+        <p class="copyright">Copyright@2022 - Association Sakafo Ny Ala</p>
+      </div>
     </footer>
   </body>
 </html>

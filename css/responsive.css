@@ -1,7 +1,7 @@
 /* taille mobile first de base <= 480px*/
 
 main {
-  font-size: 1.1rem;
+  font-size: calc(1rem + 0.4vw);
   text-align: justify;
   width: 90%;
   margin: auto;
@@ -36,23 +36,10 @@ main section img {
   height: auto;
 }
 
-main section div h3 {
-  padding: 2px;
-  color: var(--color-1);
-  font-style: italic;
-  font-weight: 500;
-  font-size: 1em;
-  margin: 0;
-}
-
-main section div h3 p {
-  margin: 0 5px;
-}
-
 main section ol {
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.05rem;
+  font-size: calc(1rem + 0.3vw);
 }
 
 main section ol li {
@@ -64,8 +51,8 @@ main section ol li {
 
 main section ol li .icon-arbre {
   margin-right: 7px;
-  width: 25px;
-  height: 25px;
+  width: calc(25px + 0.5vw);
+  height: calc(25px + 0.5vw);
 }
 
 main section ol li .terrains {
@@ -81,11 +68,13 @@ main section ol li p {
 }
 
 main section ol li button {
+  font-size: calc(1rem + 0.3vw);
+  font-weight: 100;
   height: 30px;
+  padding: 5px 10px;
   background-color: var(--color-2);
   color: var(--color-3);
   border-radius: 5px;
-  padding: 5px;
   border: 1px solid var(--color-2);
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -98,10 +87,17 @@ main section ol li button:hover {
   border: 1px solid var(--color-2);
 }
 
-/* taille mobile first de base <=768 px*/
+/* ------------------------------------------------------ */
+/* response main à partir de 768px*/
+@media (min-width: 360px) and (max-width: 768px) {
+  /*footer*/
+  .container {
+    max-width: 540px;
+  }
+}
 
-/* taille mobile first de base <=1024 px*/
-
-/* taille mobile first de base <=1600 px*/
-
-/* taille mobile first de base > 1600 px*/
+@media (min-width: 768px) {
+  main section img {
+    width: 40vw;
+  }
+}

@@ -1,26 +1,26 @@
 header .nav {
+  z-index: 99;
   display: flex;
   justify-content: center;
-  height: auto;
+  height: 40px;
   width: 100%;
   position: fixed;
-}
-
-header .nav .container-item-image {
-  display: none;
 }
 
 header .nav .container-item-nav {
   background-color: var(--color-1);
   padding: 3px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
 
-header .nav .container-item-image .item-image {
-  display: none;
+header .nav .container-item-nav li .item-image {
+  display: inline-block;
+  margin-top: 16px;
+  width: calc(27px + 1.5vw);
+  height: calc(27px + 1.5vw);
 }
 
 header .nav .container-item-nav li .item-nav {
@@ -28,6 +28,7 @@ header .nav .container-item-nav li .item-nav {
   margin: 0 5px;
   border: 1px solid var(--color-1);
   text-decoration: none;
+  font-size: calc(0.85rem + 0.5vw);
   display: flex;
   color: var(--color-3);
 }
@@ -46,6 +47,7 @@ header nav .container-item-nav li .item-nav:focus {
 
 header .container-heading {
   margin: 0;
+  min-height: 700px;
   height: 100vh;
   width: 100%;
   background-image: url("../image/agriculture.jpg");
@@ -53,20 +55,28 @@ header .container-heading {
   background-size: cover;
   background-position: center;
   margin-bottom: 30px;
+  filter: brightness(85%);
 }
 
 header .container-heading h1 {
-  padding-top: 175px;
+  letter-spacing: 10px;
+  padding-top: 185px;
+  text-transform: uppercase;
   text-align: center;
-  font-size: 1.8rem;
-  -webkit-text-stroke: 0.09px;
-  -webkit-text-stroke-color: var(--color-2);
+  font-size: calc(24px + 2vw);
+  color: var(--color-3);
+  text-shadow: 3px 3px 5px rgba(154, 156, 163, 1);
+}
+
+header .container-heading h1 .first-letter {
+  font-size: calc(60px + 3vw);
+  color: #ffc800;
 }
 
 header .container-heading .text-heading {
   margin-top: 75px;
   text-align: center;
-  font-size: 1.15rem;
+  font-size: calc(0.8rem + 1vw);
   color: var(--color-3);
   background-color: var(--color-2);
 }
