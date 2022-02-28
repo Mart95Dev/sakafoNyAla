@@ -12,6 +12,10 @@ header .container-heading {
   margin-top: 35px;
 }
 
+section p {
+  margin-bottom: 20px;
+}
+
 .video-perma {
   display: block;
   margin: auto;

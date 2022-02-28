@@ -35,7 +35,7 @@ main section p span {
 
 main section .img-section {
   display: block;
-  margin: auto;
+  margin: 20px auto 20px auto;
   border-radius: 10px;
   min-width: 200px;
   width: calc(250px + 15vw);
