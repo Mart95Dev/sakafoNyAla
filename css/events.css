@@ -1,9 +1,36 @@
 @import url("base.css");
 @import url("nav_header.css");
 @import url("footer.css");
-@import url("responsive.css");
+@import url("index.css");
 
 header .container-heading {
   background-image: url("../image/region-sud-madagascar.jpg");
   margin-bottom: 30px;
+}
+
+.subtitle {
+  margin-top: 50px;
+}
+
+.video-perma {
+  display: block;
+  margin: auto;
+  min-width: calc(515 / 2);
+  min-height: 150px;
+  width: calc(250px + 20vw);
+  height: calc(150px + 20vw);
+}
+
+.container-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-img .events {
+  display: block;
+  min-width: 100px;
+  width: calc(100px + 10vw);
+  border-radius: 5px;
+  margin: auto auto 20px auto;
+  border: 1px solid var(--color-2);
 }
