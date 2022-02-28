@@ -25,7 +25,11 @@ main section .subtitle::after {
   height: 1px;
 }
 
-main section p {
+main section .weight {
+  font-weight: bold;
+}
+
+main section p span {
   margin: 20px 0;
 }
 
