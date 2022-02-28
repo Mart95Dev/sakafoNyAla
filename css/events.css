@@ -1,7 +1,7 @@
 @import url("base.css");
 @import url("nav_header.css");
 @import url("footer.css");
-@import url("index.css");
+@import url("main.css");
 
 header .container-heading {
   background-image: url("../image/region-sud-madagascar.jpg");
@@ -9,15 +9,14 @@ header .container-heading {
 }
 
 .subtitle {
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .video-perma {
   display: block;
   margin: auto;
   min-width: calc(515 / 2);
-  min-height: 150px;
-  width: calc(250px + 20vw);
+  width: calc(225px + 20vw);
   height: calc(150px + 20vw);
 }
 

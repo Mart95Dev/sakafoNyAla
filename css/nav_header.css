@@ -8,6 +8,7 @@ header .nav {
 }
 
 header .nav .container-item-nav {
+  position: relative;
   background-color: var(--color-1);
   padding: 3px;
   display: flex;
@@ -17,15 +18,28 @@ header .nav .container-item-nav {
 }
 
 header .nav .container-item-nav li .item-image {
-  display: inline-block;
-  margin-top: 15px;
+  position: absolute;
+  display: block;
+  margin-top: -7.5px;
+  margin-left: 0px;
   width: calc(27px + 1.5vw);
   height: calc(27px + 1.5vw);
+  animation: slidein 0.5s ease;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: -7.5%;
+  }
 }
 
 header .nav .container-item-nav li .item-nav {
   padding: 1px;
-  margin: 0 5px;
+  margin: 0 3px -10px 15px;
   border: 1px solid var(--color-1);
   text-decoration: none;
   font-size: calc(0.85rem + 0.5vw);
@@ -36,7 +50,7 @@ header .nav .container-item-nav li .item-nav {
 header nav .container-item-nav li .item-nav:hover {
   padding: 1px;
   border-top: 1.5px solid var(--color-2);
-  border-bottom: 1.5px solid var(--color-2);
+  border-bottom: 2px solid var(--color-2);
 }
 
 header nav .container-item-nav li .item-nav:focus {
